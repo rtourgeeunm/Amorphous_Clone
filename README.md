@@ -34,4 +34,4 @@ Glooples
 Menu
   Includes options for starting a new run, alternate game modes such as practice and bounty mode, game options, checking rewards and achievements, and exiting the game
   
-Let's get started with assets.
+Let's start a new Project!
