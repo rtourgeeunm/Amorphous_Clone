@@ -1,16 +1,15 @@
 extends CharacterBody2D
 
-var target = Vector2(200,200)
+var target = Vector2()
 var direction = null
 var velocity_deadzone = 3
 
-#forward here is a click, will change name from forward to swing
+#forward here is a click, will change name from forward to attack
 func _input(event):
 	if event.is_action_pressed("Forward"):
 		target = get_global_mouse_position()
 
-const  speed = 100
-#var direction = (null)
+const  speed = 150
 var mouse_position = null
 
 func _process(delta):
@@ -22,8 +21,8 @@ func _process(delta):
 		direction = (target - position).normalized()
 		velocity = (direction * speed)
 		move_and_slide()
+
 	var is_moving = null
-#	print(direction)
 
 """
 sample code from a tutorial
