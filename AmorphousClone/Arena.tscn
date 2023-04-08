@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://cdehfbr5mrre3"]
+
+[ext_resource type="Texture2D" uid="uid://cte46356v0q3t" path="res://Arena1.png" id="1_eqb3i"]
+[ext_resource type="Script" path="res://Player.gd" id="2_8rvit"]
+[ext_resource type="Texture2D" uid="uid://cpo7bx47t7m7n" path="res://Guy.png" id="2_nsxx2"]
+[ext_resource type="Script" path="res://Debug Label.gd" id="4_h4mkm"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_eqb3i")
+metadata/_edit_group_ = true
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(576, 320)
+script = ExtResource("2_8rvit")
+
+[node name="Guy" type="Sprite2D" parent="Player"]
+rotation = -1.5708
+texture = ExtResource("2_nsxx2")
+
+[node name="Debug Label" type="Label" parent="Player"]
+offset_left = 96.0
+offset_top = 8.0
+offset_right = 136.0
+offset_bottom = 31.0
+script = ExtResource("4_h4mkm")
