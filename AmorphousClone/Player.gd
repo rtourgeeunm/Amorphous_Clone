@@ -2,8 +2,9 @@ extends CharacterBody2D
 
 var target = Vector2()
 var direction = null
+var velocity_deadzone = 3
 
-#forward here is a click, will change name from forward to swing
+#forward here is a click, will change name from forward to attack
 func _input(event):
 	if event.is_action_pressed("Forward"):
 		target = get_global_mouse_position()
@@ -15,9 +16,12 @@ func _process(delta):
 	look_at(get_global_mouse_position())
 	mouse_position = get_global_mouse_position()
 	#seems that normalized is what I needed to maintain constant speed.
-	direction = (mouse_position - position).normalized()
-	velocity = (direction * speed)
-	move_and_slide()
+	var distance = position.distance_to(target)
+	if distance > velocity_deadzone:
+		direction = (target - position).normalized()
+		velocity = (direction * speed)
+		move_and_slide()
+
 	var is_moving = null
 
 """
