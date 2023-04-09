@@ -1,0 +1,11 @@
+2a60927148abd1d33b818b535e306557
+::res://::1680998348
+Arena1.png::CompressedTexture2D::6116504578361835523::1680995260::1680997037::1::::<><>::
+Arena.tscn::PackedScene::4992099437400240048::1680998282::0::1::::<><>::uid://cte46356v0q3t<>res://Player.gd<>uid://cpo7bx47t7m7n<>res://Debug Label.gd
+Blob1.png::CompressedTexture2D::3631235352983973224::1680995260::1680997037::1::::<><>::
+BlueBug.png::CompressedTexture2D::4999162954215359079::1680995260::1680997037::1::::<><>::
+Debug Label.gd::GDScript::-1::1680998205::0::1::::<>Label<>::
+Guy.png::CompressedTexture2D::5856521294392934509::1680995260::1680997037::1::::<><>::
+icon.svg::CompressedTexture2D::4911349651909982294::1680995260::1680997037::1::::<><>::
+Player.gd::GDScript::-1::1680998205::0::1::::<>CharacterBody2D<>::
+Swords.png::CompressedTexture2D::8426398919736627916::1680995260::1680997037::1::::<><>::

@@ -54,7 +54,6 @@ rotation = -1.5708
 texture = ExtResource("2_nsxx2")
 
 [node name="Debug Label" type="Label" parent="Player"]
-visible = false
 offset_left = 96.0
 offset_top = 8.0
 offset_right = 136.0

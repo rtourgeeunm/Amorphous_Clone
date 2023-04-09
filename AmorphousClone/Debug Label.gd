@@ -8,9 +8,11 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	set_text("spd = "+ str(subject.speed)+"\n
-	vel = "+ str(subject.velocity)+"\n
-	dir = "+ str(subject.direction)+"\n
-	pos = "+ str(subject.position)+"\n
-	tar = "+ str(subject.target)+"\n
-	dir = ")
+	set_text(
+	"spd = "+ str(subject.speed)
+	+"\nvel = "+ str(subject.velocity)
+	+"\ndir = "+ str(subject.direction)
+	+"\npos = "+ str(subject.position)
+	+"\ntar = "+ str(subject.mouse_position)
+	+"\ndis = "+ str(subject.distance)
+	)
