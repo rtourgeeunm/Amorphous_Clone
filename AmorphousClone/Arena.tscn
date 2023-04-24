@@ -1,9 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://cdehfbr5mrre3"]
+[gd_scene load_steps=5 format=3 uid="uid://p8m4huo3rrpk"]
 
 [ext_resource type="Texture2D" uid="uid://cte46356v0q3t" path="res://Arena1.png" id="1_eqb3i"]
-[ext_resource type="Script" path="res://Player.gd" id="2_8rvit"]
-[ext_resource type="Texture2D" uid="uid://cpo7bx47t7m7n" path="res://Guy.png" id="2_nsxx2"]
-[ext_resource type="Script" path="res://Debug Label.gd" id="4_h4mkm"]
+[ext_resource type="Script" path="res://Arena.gd" id="1_vcu50"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3mr1x"]
 size = Vector2(1153, 87)
@@ -11,10 +9,8 @@ size = Vector2(1153, 87)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_256ef"]
 size = Vector2(108, 648)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rpttx"]
-size = Vector2(16, 32)
-
-[node name="Node2D" type="Node2D"]
+[node name="Arena" type="Node2D"]
+script = ExtResource("1_vcu50")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 offset_right = 1152.0
@@ -45,24 +41,6 @@ visible = false
 position = Vector2(-518, 72)
 shape = SubResource("RectangleShape2D_256ef")
 
-[node name="Player" type="CharacterBody2D" parent="."]
-position = Vector2(576, 320)
-script = ExtResource("2_8rvit")
-
-[node name="Guy" type="Sprite2D" parent="Player"]
-rotation = -1.5708
-texture = ExtResource("2_nsxx2")
-
-[node name="Debug Label" type="Label" parent="Player"]
-offset_left = 96.0
-offset_top = 8.0
-offset_right = 136.0
-offset_bottom = 31.0
-script = ExtResource("4_h4mkm")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-shape = SubResource("RectangleShape2D_rpttx")
-
 [node name="Spawner1" type="Node2D" parent="."]
 position = Vector2(328, 80)
 
@@ -86,3 +64,9 @@ position = Vector2(104, 448)
 
 [node name="Spawner8" type="Node2D" parent="."]
 position = Vector2(104, 208)
+
+[node name="Enemy_Timer" type="Timer" parent="."]
+wait_time = 0.25
+autostart = true
+
+[connection signal="timeout" from="Enemy_Timer" to="." method="_on_enemy_timer_timeout"]

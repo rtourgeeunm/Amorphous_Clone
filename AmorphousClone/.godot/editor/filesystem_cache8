@@ -1,11 +1,35 @@
 2a60927148abd1d33b818b535e306557
-::res://::1680998348
+::res://::1682304037
 Arena1.png::CompressedTexture2D::6116504578361835523::1680995260::1680997037::1::::<><>::
-Arena.tscn::PackedScene::4992099437400240048::1680998282::0::1::::<><>::uid://cte46356v0q3t<>res://Player.gd<>uid://cpo7bx47t7m7n<>res://Debug Label.gd
-Blob1.png::CompressedTexture2D::3631235352983973224::1680995260::1680997037::1::::<><>::
-BlueBug.png::CompressedTexture2D::4999162954215359079::1680995260::1680997037::1::::<><>::
-Debug Label.gd::GDScript::-1::1680998205::0::1::::<>Label<>::
-Guy.png::CompressedTexture2D::5856521294392934509::1680995260::1680997037::1::::<><>::
+Arena.gd::GDScript::-1::1682304017::0::1::::<>Node2D<>::
+Arena.tscn::PackedScene::1121737911624638932::1682302886::0::1::::<><>::uid://cte46356v0q3t<>res://Arena.gd
+Debug Label.gd::GDScript::-1::1682304037::0::1::::<>Label<>::
 icon.svg::CompressedTexture2D::4911349651909982294::1680995260::1680997037::1::::<><>::
-Player.gd::GDScript::-1::1680998205::0::1::::<>CharacterBody2D<>::
 Swords.png::CompressedTexture2D::8426398919736627916::1680995260::1680997037::1::::<><>::
+::res://Autoload/::1681700581
+Steering.gd::GDScript::-1::1681700581::0::1::::<>Node<>::
+::res://Mob/::1682304037
+BeetleLabel.gd::GDScript::-1::1682295971::0::1::::<>Label<>::
+::res://Mob/Beetle/::1682304037
+Beetle.gd::GDScript::-1::1681436239::0::1::::<>CharacterBody2D<>::
+Beetle.tscn::PackedScene::5079794050845258233::1682304046::0::1::::<><>::res://Mob/Beetle/Beetle.gd<>uid://cdhvqo5jets6j<>res://Mob/BeetleLabel.gd
+BlueBug.png::CompressedTexture2D::4999162954215359079::1680995260::1682303973::1::::<><>::
+::res://Mob/Slime/::1682303917
+Blob1.png::CompressedTexture2D::3631235352983973224::1680995260::1682303917::1::::<><>::
+Slime Label.gd::GDScript::-1::1681435542::0::1::::<>Label<>::
+Slime.gd::GDScript::-1::1681435775::0::1::::<>CharacterBody2D<>::
+slime.tscn::PackedScene::-1::1682303916::0::1::::<><>::res://Mob/Slime/Slime.gd<>uid://bry86et8w2ydk<>res://Mob/Slime/Slime Label.gd
+::res://Player/::1682302886
+Guy.png::CompressedTexture2D::5856521294392934509::1680995260::1681186117::1::::<><>::
+Player Label.gd::GDScript::-1::1682295971::0::1::::<>Label<>::
+Player.gd::GDScript::-1::1680998406::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::1287229648371777119::1682302886::0::1::::<><>::res://Player/Player.gd<>uid://cpo7bx47t7m7n<>res://Player/Player Label.gd
+::res://TestBots/::1682296082
+::res://TestBots/TestBot1/::1682296414
+TestBot1 Label.gd::GDScript::-1::1681694450::0::1::::<>Label<>::
+TestBot1.gd::GDScript::-1::1682296413::0::1::::<>CharacterBody2D<>::
+TestBot1.tscn::PackedScene::8086844024901017129::1682296413::0::1::::<><>::res://TestBots/TestBot1/TestBot1.gd<>uid://cb8dhgfniq8k5<>res://TestBots/TestBot1/TestBot1 Label.gd
+::res://TestBots/TestBot2/::1682304017
+TestBot2 Label.gd::GDScript::-1::1682302871::0::1::::<>Label<>::
+TestBot2.gd::GDScript::-1::1682304017::0::1::::<>CharacterBody2D<>::
+TestBot2.tscn::PackedScene::845264757351874651::1682303595::0::1::::<><>::res://TestBots/TestBot2/TestBot2.gd<>uid://cb8dhgfniq8k5<>res://TestBots/TestBot2/TestBot2 Label.gd

@@ -21,8 +21,8 @@ func _process(delta):
 	+"\nvel = "+ str(subject.velocity)
 	+"\ndir = "+ str(subject.direction)
 	+"\npos = "+ str(subject.position)
-	+"\ntar = "+ str(subject.mouse_position)
+	+"\ntar = "+ str(subject.target)
 	+"\ndis = "+ str(subject.distance)
-	
+	+"\nsta = "+ str(subject.current_state)
 	)
 

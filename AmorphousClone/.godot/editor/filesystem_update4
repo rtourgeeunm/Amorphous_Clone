@@ -1,2 +1,13 @@
+res://Mob/Beetle/Beetle.tscn
+res://Debug Label.gd
+res://Arena.gd
+res://TestBots/TestBot2/TestBot2.gd
+res://Mob/Beetle/Beetle.gd
+res://Mob/Beetle/BeetleLabel.gd
+res://Player/Player Label.gd
+res://Player/Player.gd
+res://Autoload/Steering.gd
+res://TestBots/TestBot2/TestBot2 Label.gd
+res://TestBots/TestBot2/TestBot2.tscn
 res://Arena.tscn
-res://Player.gd
+res://Player/player.tscn
