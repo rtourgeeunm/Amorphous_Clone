@@ -15,6 +15,14 @@ run/main_scene="res://Arena.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Steering="*res://Autoload/Steering.gd"
+
+[display]
+
+window/stretch/mode="viewport"
+
 [input]
 
 attack={

@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=3 uid="uid://mbpnfo7xmkr8"]
+
+[ext_resource type="Script" path="res://TestBots/TestBot2/TestBot2.gd" id="1_4tapp"]
+[ext_resource type="Texture2D" uid="uid://cb8dhgfniq8k5" path="res://icon.svg" id="2_l0d4i"]
+[ext_resource type="Script" path="res://TestBots/TestBot2/TestBot2 Label.gd" id="3_gvkc6"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5vjo1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_l0d4i")
+}],
+"loop": true,
+"name": &"default",
+"speed": 28.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wn2vl"]
+size = Vector2(16, 16)
+
+[node name="TestBot" type="Node2D"]
+
+[node name="TestBot" type="CharacterBody2D" parent="."]
+position = Vector2(576, 320)
+script = ExtResource("1_4tapp")
+speed = 1000.0
+vel_deadzone = 25
+
+[node name="Body" type="AnimatedSprite2D" parent="TestBot"]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_5vjo1")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TestBot"]
+shape = SubResource("RectangleShape2D_wn2vl")
+
+[node name="TargetTimer" type="Timer" parent="TestBot"]
+wait_time = 0.218
+autostart = true
+
+[node name="StateTimer" type="Timer" parent="TestBot"]
+autostart = true
+
+[node name="TestBot2Label" type="Label" parent="."]
+offset_left = 672.0
+offset_top = 328.0
+offset_right = 712.0
+offset_bottom = 351.0
+script = ExtResource("3_gvkc6")
+
+[connection signal="timeout" from="TestBot/TargetTimer" to="TestBot" method="_on_target_timer_timeout"]
+[connection signal="timeout" from="TestBot/StateTimer" to="TestBot" method="_on_state_timer_timeout"]

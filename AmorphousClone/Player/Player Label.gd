@@ -12,11 +12,9 @@ func _ready():
 
 func _process(delta):
 	set_position(label_position)
-	label_position = subject.position# + Vector2(30,5)
+	label_position = subject.position + Vector2(30,5)
 	#the label_position calculation here off-sets the label by a little bit.
-	set_text(
-	#str(subject.name)
-	#str(get_property_list())
+	set_text(#str(get_property_list())
 	"spd = "+ str(subject.speed)
 	+"\nvel = "+ str(subject.velocity)
 	+"\ndir = "+ str(subject.direction)

@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://slsqp1weell4"]
+
+[ext_resource type="Script" path="res://Player/Player.gd" id="1_hefu6"]
+[ext_resource type="Texture2D" uid="uid://cpo7bx47t7m7n" path="res://Player/Guy.png" id="2_qcl8k"]
+[ext_resource type="Script" path="res://Player/Player Label.gd" id="3_opj4m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8yaih"]
+size = Vector2(16, 16)
+
+[node name="Player" type="Node2D"]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(576, 320)
+script = ExtResource("1_hefu6")
+
+[node name="Guy" type="Sprite2D" parent="Player"]
+rotation = -1.5708
+texture = ExtResource("2_qcl8k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource("RectangleShape2D_8yaih")
+
+[node name="Debug Label" type="Label" parent="."]
+offset_left = 672.0
+offset_top = 328.0
+offset_right = 712.0
+offset_bottom = 351.0
+script = ExtResource("3_opj4m")
