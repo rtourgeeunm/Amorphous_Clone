@@ -11,5 +11,5 @@ func _process(delta):
 		"Pos" + str(subject.position)
 		+"\n" + "Vel" + str(subject.velocity)
 		+"\n" + "Ang" + str(subject.velocity.angle())
-		
+#		+"\n" + "Dis" + str(subject.distance)
 	)

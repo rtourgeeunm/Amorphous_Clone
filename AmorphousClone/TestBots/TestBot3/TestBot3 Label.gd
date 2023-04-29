@@ -18,9 +18,10 @@ func _process(delta):
 	#str(subject.name)
 	#str(get_property_list())
 #	"spd = "+ str(subject.speed)
-#	+"\nvel = "+ str(subject.velocity)
 #	+"\ndir = "+ str(subject.direction)
 	"\npos = "+ str(subject.position)
+	+"\nvel = "+ str(subject.velocity)
+
 #	+"\ntar = "+ str(subject.target)
 #	+"\ndis = "+ str(subject.distance)
 	)

@@ -44,7 +44,7 @@ autoplay = "default"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TestBot"]
 shape = SubResource("RectangleShape2D_wn2vl")
 
-[node name="TestBot2Label" type="Label" parent="."]
+[node name="TestBot3Label" type="Label" parent="."]
 offset_left = 672.0
 offset_top = 328.0
 offset_right = 712.0
