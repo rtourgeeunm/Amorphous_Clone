@@ -1,13 +1,7 @@
-res://Mob/Beetle/Beetle.tscn
-res://Debug Label.gd
-res://Arena.gd
-res://TestBots/TestBot2/TestBot2.gd
-res://Mob/Beetle/Beetle.gd
+res://TestBots/TestBot4/TestBot4.tscn
 res://Mob/Beetle/BeetleLabel.gd
-res://Player/Player Label.gd
-res://Player/Player.gd
-res://Autoload/Steering.gd
-res://TestBots/TestBot2/TestBot2 Label.gd
+res://Debug Label.gd
+res://TestBots/TestBot3/TestBot3.tscn
 res://TestBots/TestBot2/TestBot2.tscn
-res://Arena.tscn
-res://Player/player.tscn
+res://TestBots/TestBot4/TestBot4.gd
+res://TestBots/TestBot4/SteeringComponent.gd

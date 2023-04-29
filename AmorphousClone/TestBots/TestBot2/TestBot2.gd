@@ -65,26 +65,37 @@ func _generate_new_target():
 		target = get_global_mouse_position()
 	else:
 		target = WINDOW_BORDER_CENTER
-	print(target)
+#	print(target)
 #Generates a set of targets for the mob.
 
 
 func _physics_process(delta):
-	rotate(velocity.angle())
+	rotation = (velocity.angle())
 	match current_state:
 		IDLE:
 			velocity = Vector2.ZERO
 		WANDER:
 			move()
 		ATTACK:
-			pass
+			attack()
 	distance = position.distance_to(target)
 	move_and_slide()
 
+
 func move():
-	# if distance > vel_deadzone:
+	if distance > vel_deadzone:
+		speed = 200
 		velocity = (target - position).normalized() * speed
 		move_and_slide()
+
+
+func attack():
+	if distance > vel_deadzone:
+		speed = 200 * 5
+		target = get_global_mouse_position()
+		velocity = (target - position).normalized() * speed
+		move_and_slide()
+
 
 func choose(array):
 	array.shuffle()
@@ -93,5 +104,5 @@ func choose(array):
 	
 
 func _on_state_timer_timeout():
-	$StateTimer.wait_time = 0.5
+	$StateTimer.wait_time = 2
 	current_state = choose([IDLE, WANDER, ATTACK])

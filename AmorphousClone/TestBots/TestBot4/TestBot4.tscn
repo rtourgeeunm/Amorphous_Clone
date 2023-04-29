@@ -1,0 +1,142 @@
+[gd_scene load_steps=22 format=3 uid="uid://kq8f3s4wddxm"]
+
+[ext_resource type="Script" path="res://TestBots/TestBot4/TestBot4.gd" id="1_gqosc"]
+[ext_resource type="Texture2D" uid="uid://cdhvqo5jets6j" path="res://Mob/Beetle/BlueBug.png" id="2_b1b2d"]
+[ext_resource type="Script" path="res://TestBots/TestBot4/TestBot4Label.gd" id="3_38km6"]
+[ext_resource type="Script" path="res://TestBots/TestBot4/AnimatedSprite2D.gd" id="3_jh8g1"]
+[ext_resource type="Script" path="res://TestBots/TestBot4/SteeringComponent.gd" id="5_uhhbe"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8li4o"]
+atlas = ExtResource("2_b1b2d")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3o17o"]
+atlas = ExtResource("2_b1b2d")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ey5mp"]
+atlas = ExtResource("2_b1b2d")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4tp0g"]
+atlas = ExtResource("2_b1b2d")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wowuc"]
+atlas = ExtResource("2_b1b2d")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lfmmy"]
+atlas = ExtResource("2_b1b2d")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_obrql"]
+atlas = ExtResource("2_b1b2d")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y31hl"]
+atlas = ExtResource("2_b1b2d")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0suug"]
+atlas = ExtResource("2_b1b2d")
+region = Rect2(128, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_psmdf"]
+atlas = ExtResource("2_b1b2d")
+region = Rect2(192, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m6c20"]
+atlas = ExtResource("2_b1b2d")
+region = Rect2(256, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1wvf3"]
+atlas = ExtResource("2_b1b2d")
+region = Rect2(320, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m7oyw"]
+atlas = ExtResource("2_b1b2d")
+region = Rect2(0, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fxslq"]
+atlas = ExtResource("2_b1b2d")
+region = Rect2(64, 128, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4tx5b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8li4o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3o17o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ey5mp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4tp0g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wowuc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lfmmy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_obrql")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y31hl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0suug")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_psmdf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m6c20")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1wvf3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m7oyw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fxslq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 28.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2wjap"]
+radius = 21.095
+
+[node name="TestBot" type="Node2D"]
+
+[node name="TestBot" type="CharacterBody2D" parent="."]
+position = Vector2(576, 320)
+script = ExtResource("1_gqosc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TestBot"]
+sprite_frames = SubResource("SpriteFrames_4tx5b")
+script = ExtResource("3_jh8g1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TestBot"]
+position = Vector2(0, -2)
+shape = SubResource("CircleShape2D_2wjap")
+
+[node name="SteeringComponent" type="Node" parent="TestBot"]
+script = ExtResource("5_uhhbe")
+
+[node name="TestBot4Label" type="Label" parent="."]
+offset_left = 672.0
+offset_top = 328.0
+offset_right = 712.0
+offset_bottom = 351.0
+script = ExtResource("3_38km6")
+
+[connection signal="_stop_anim" from="TestBot" to="TestBot/AnimatedSprite2D" method="_on_test_bot__stop_anim"]

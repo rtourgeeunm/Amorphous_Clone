@@ -27,6 +27,7 @@ speed = 1000.0
 vel_deadzone = 25
 
 [node name="Body" type="AnimatedSprite2D" parent="TestBot"]
+rotation = 1.5708
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_5vjo1")
 autoplay = "default"
@@ -35,7 +36,6 @@ autoplay = "default"
 shape = SubResource("RectangleShape2D_wn2vl")
 
 [node name="TargetTimer" type="Timer" parent="TestBot"]
-wait_time = 0.218
 autostart = true
 
 [node name="StateTimer" type="Timer" parent="TestBot"]

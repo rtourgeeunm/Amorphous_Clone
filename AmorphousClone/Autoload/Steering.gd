@@ -13,6 +13,6 @@ static func follow(
 		mass: = DEFAULT_MASS
 	) -> Vector2:
 	var desired_velocity: Vector2 = (target_position - global_position).normalized() * max_speed
-	var steering: Vector2 = (desired_velocity - velocity) / mass 
+	var steering: = (desired_velocity - velocity) / mass 
 	
 	return velocity + steering
