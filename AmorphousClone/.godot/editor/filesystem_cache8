@@ -1,18 +1,18 @@
 2a60927148abd1d33b818b535e306557
-::res://::1682749909
+::res://::1683352598
 Arena1.png::CompressedTexture2D::6116504578361835523::1680995260::1680997037::1::::<><>::
 Arena.gd::GDScript::-1::1682304148::0::1::::<>Node2D<>::
 Arena.tscn::PackedScene::1121737911624638932::1682646751::0::1::::<><>::uid://cte46356v0q3t<>res://Arena.gd
-Debug Label.gd::GDScript::-1::1682740578::0::1::::<>Label<>::
+Debug Label.gd::GDScript::-1::1683166364::0::1::::<>Label<>::
 icon.svg::CompressedTexture2D::4911349651909982294::1680995260::1680997037::1::::<><>::
 Swords.png::CompressedTexture2D::8426398919736627916::1680995260::1680997037::1::::<><>::
 ::res://Autoload/::1682749178
 Steering.gd::GDScript::-1::1682749178::0::1::::<>Node<>::
 ::res://Mob/::1682304046
-::res://Mob/Beetle/::1682740578
+::res://Mob/Beetle/::1683166364
 Beetle.gd::GDScript::-1::1682304148::0::1::::<>CharacterBody2D<>::
 Beetle.tscn::PackedScene::1054790602777429290::1682304074::0::1::::<><>::res://Mob/Beetle/Beetle.gd<>uid://cdhvqo5jets6j<>res://Mob/Beetle/BeetleLabel.gd
-BeetleLabel.gd::GDScript::-1::1682740578::0::1::::<>Label<>::
+BeetleLabel.gd::GDScript::-1::1683166364::0::1::::<>Label<>::
 BlueBug.png::CompressedTexture2D::4999162954215359079::1680995260::1682303973::1::::<><>::
 ::res://Mob/Slime/::1682303917
 Blob1.png::CompressedTexture2D::3631235352983973224::1680995260::1682303917::1::::<><>::
@@ -24,24 +24,37 @@ Guy.png::CompressedTexture2D::5856521294392934509::1680995260::1681186117::1::::
 Player Label.gd::GDScript::-1::1682304148::0::1::::<>Label<>::
 Player.gd::GDScript::-1::1682304148::0::1::::<>CharacterBody2D<>::
 player.tscn::PackedScene::1287229648371777119::1682646751::0::1::::<><>::res://Player/Player.gd<>uid://cpo7bx47t7m7n<>res://Player/Player Label.gd
-::res://TestBots/::1682740589
+::res://TestBots/::1683165965
 ::res://TestBots/TestBot1/::1682296414
 TestBot1 Label.gd::GDScript::-1::1681694450::0::1::::<>Label<>::
 TestBot1.gd::GDScript::-1::1682296413::0::1::::<>CharacterBody2D<>::
 TestBot1.tscn::PackedScene::8086844024901017129::1682296413::0::1::::<><>::res://TestBots/TestBot1/TestBot1.gd<>uid://cb8dhgfniq8k5<>res://TestBots/TestBot1/TestBot1 Label.gd
-::res://TestBots/TestBot2/::1682749876
+::res://TestBots/TestBot2/::1683171451
 TestBot2 Label.gd::GDScript::-1::1682305596::0::1::::<>Label<>::
 TestBot2.gd::GDScript::-1::1682562290::0::1::::<>CharacterBody2D<>::
-TestBot2.tscn::PackedScene::845264757351874651::1682749876::0::1::::<><>::res://TestBots/TestBot2/TestBot2.gd<>uid://cb8dhgfniq8k5<>res://TestBots/TestBot2/TestBot2 Label.gd
-::res://TestBots/TestBot3/::1682749876
+TestBot2.tscn::PackedScene::845264757351874651::1683171451::0::1::::<><>::res://TestBots/TestBot2/TestBot2.gd<>uid://cb8dhgfniq8k5<>res://TestBots/TestBot2/TestBot2 Label.gd
+::res://TestBots/TestBot3/::1683171451
 SeekComponent.gd::GDScript::-1::1682741721::0::1::::<>Node<>::
-TestBot3 Label.gd::GDScript::-1::1682741410::0::1::::<>Label<>::
-TestBot3.gd::GDScript::-1::1682742431::0::1::::<>CharacterBody2D<>::
-TestBot3.tscn::PackedScene::8370332701867984321::1682749876::0::1::::<><>::res://TestBots/TestBot3/TestBot3.gd<>res://TestBots/TestBot3/TestBot3 Label.gd<>res://TestBots/TestBot3/SeekComponent.gd<>uid://cb8dhgfniq8k5<>res://TestBots/TestBot3/VelocityComponent.gd
+TestBot3 Label.gd::GDScript::-1::1683165964::0::1::::<>Label<>::
+TestBot3.gd::GDScript::-1::1683169582::0::1::::<>CharacterBody2D<>::
+TestBot3.tscn::PackedScene::8370332701867984321::1683171451::0::1::::<><>::res://TestBots/TestBot3/TestBot3.gd<>res://TestBots/TestBot3/TestBot3 Label.gd<>res://TestBots/TestBot3/SeekComponent.gd<>uid://cb8dhgfniq8k5<>res://TestBots/TestBot3/VelocityComponent.gd
 VelocityComponent.gd::GDScript::-1::1682742107::0::1::::<>Node<>::
-::res://TestBots/TestBot4/::1682749875
-AnimatedSprite2D.gd::GDScript::-1::1682743973::0::1::::<>AnimatedSprite2D<>::
-SteeringComponent.gd::GDScript::-1::1682749783::0::1::::<>Node<>::
-TestBot4.gd::GDScript::-1::1682749864::0::1::::<>CharacterBody2D<>::
-TestBot4.tscn::PackedScene::736932569983530430::1682749875::0::1::::<><>::res://TestBots/TestBot4/TestBot4.gd<>uid://cdhvqo5jets6j<>res://TestBots/TestBot4/TestBot4Label.gd<>res://TestBots/TestBot4/AnimatedSprite2D.gd<>res://TestBots/TestBot4/SteeringComponent.gd
-TestBot4Label.gd::GDScript::-1::1682742700::0::1::::<>Label<>::
+::res://TestBots/TestBot4/::1683171450
+AnimatedSprite2D.gd::GDScript::-1::1683165964::0::1::::<>AnimatedSprite2D<>::
+SteeringComponent.gd::GDScript::-1::1683165964::0::1::::<>Node<>::
+TestBot4.gd::GDScript::-1::1683165964::0::1::::<>CharacterBody2D<>::
+TestBot4.tscn::PackedScene::736932569983530430::1683171450::0::1::::<><>::res://TestBots/TestBot4/TestBot4.gd<>uid://cdhvqo5jets6j<>res://TestBots/TestBot4/TestBot4Label.gd<>res://TestBots/TestBot4/AnimatedSprite2D.gd<>res://TestBots/TestBot4/SteeringComponent.gd
+TestBot4Label.gd::GDScript::-1::1683165964::0::1::::<>Label<>::
+::res://TestBots/TestBot5/::1683165965
+AnimatedSprite2D.gd::GDScript::-1::1683165964::0::1::::<>AnimatedSprite2D<>::
+SteeringComponent.gd::GDScript::-1::1683165964::0::1::::<>Node<>::
+TestBot5.gd::GDScript::-1::1683165964::0::1::::<>CharacterBody2D<>::
+TestBot5.tscn::PackedScene::4254316036489954640::1683165965::0::1::::<><>::res://TestBots/TestBot5/TestBot5.gd<>uid://cdhvqo5jets6j<>res://TestBots/TestBot5/AnimatedSprite2D.gd<>res://TestBots/TestBot5/SteeringComponent.gd<>res://TestBots/TestBot5/TestBot5Label.gd
+TestBot5Label.gd::GDScript::-1::1683165965::0::1::::<>Label<>::
+::res://TestBots/TestBot6/::1683171506
+AnimatedSprite2D.gd::GDScript::-1::1683165965::0::1::::<>AnimatedSprite2D<>::
+FollowComponent.gd::GDScript::-1::1683170809::0::1::::<>Node<>::
+SteeringComponent.gd::GDScript::-1::1683165965::0::1::::<>Node<>::
+TestBot6.gd::GDScript::-1::1683171411::0::1::::<>CharacterBody2D<>::
+TestBot6.tscn::PackedScene::5715687451959617727::1683171506::0::1::::<><>::res://TestBots/TestBot6/TestBot6.gd<>uid://cdhvqo5jets6j<>res://TestBots/TestBot6/AnimatedSprite2D.gd<>res://TestBots/TestBot6/SteeringComponent.gd<>res://TestBots/TestBot6/FollowComponent.gd<>res://TestBots/TestBot6/TestBot6Label.gd
+TestBot6Label.gd::GDScript::-1::1683171451::0::1::::<>Label<>::

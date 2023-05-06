@@ -1,9 +1,10 @@
-[gd_scene load_steps=22 format=3 uid="uid://cnoysjcry6s0n"]
+[gd_scene load_steps=23 format=3 uid="uid://cnoysjcry6s0n"]
 
 [ext_resource type="Script" path="res://TestBots/TestBot6/TestBot6.gd" id="1_ivhqp"]
 [ext_resource type="Texture2D" uid="uid://cdhvqo5jets6j" path="res://Mob/Beetle/BlueBug.png" id="2_mw1jj"]
 [ext_resource type="Script" path="res://TestBots/TestBot6/AnimatedSprite2D.gd" id="3_cdy0h"]
 [ext_resource type="Script" path="res://TestBots/TestBot6/SteeringComponent.gd" id="4_gv31l"]
+[ext_resource type="Script" path="res://TestBots/TestBot6/FollowComponent.gd" id="5_hhdng"]
 [ext_resource type="Script" path="res://TestBots/TestBot6/TestBot6Label.gd" id="5_v7uvm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8li4o"]
@@ -132,6 +133,9 @@ shape = SubResource("CircleShape2D_2wjap")
 
 [node name="SteeringComponent" type="Node" parent="TestBot"]
 script = ExtResource("4_gv31l")
+
+[node name="FollowComponent" type="Node" parent="TestBot"]
+script = ExtResource("5_hhdng")
 
 [node name="TestBot4Label" type="Label" parent="."]
 offset_left = 672.0

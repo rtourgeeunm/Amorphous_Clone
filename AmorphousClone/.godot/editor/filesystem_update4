@@ -3,5 +3,5 @@ res://Mob/Beetle/BeetleLabel.gd
 res://Debug Label.gd
 res://TestBots/TestBot3/TestBot3.tscn
 res://TestBots/TestBot2/TestBot2.tscn
-res://TestBots/TestBot4/TestBot4.gd
-res://TestBots/TestBot4/SteeringComponent.gd
+res://TestBots/TestBot6/TestBot6.tscn
+res://TestBots/TestBot6/TestBot6.gd

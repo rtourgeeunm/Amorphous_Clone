@@ -31,9 +31,9 @@ script = ExtResource("2_ojtoi")
 
 [node name="VelocityComponent" type="Node" parent="TestBot"]
 script = ExtResource("3_rcey2")
-max_speed = 1000.0
+max_speed = 100.0
 max_force = 50.0
-mass = 100.0
+mass = 50.0
 
 [node name="Body" type="AnimatedSprite2D" parent="TestBot"]
 rotation = 1.5708
