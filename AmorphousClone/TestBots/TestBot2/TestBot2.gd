@@ -106,3 +106,4 @@ func choose(array):
 func _on_state_timer_timeout():
 	$StateTimer.wait_time = 2
 	current_state = choose([IDLE, WANDER, ATTACK])
+	print(current_state)

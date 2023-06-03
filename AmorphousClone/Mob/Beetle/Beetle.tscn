@@ -111,7 +111,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wn2vl"]
-size = Vector2(16, 16)
+size = Vector2(40, 32)
 
 [node name="Slime" type="Node2D"]
 
@@ -120,12 +120,21 @@ position = Vector2(576, 320)
 script = ExtResource("1_xywup")
 
 [node name="Body" type="AnimatedSprite2D" parent="Beetle"]
-rotation = -1.5708
+rotation = 1.5708
 sprite_frames = SubResource("SpriteFrames_5vjo1")
 autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Beetle"]
+position = Vector2(-4, 0)
 shape = SubResource("RectangleShape2D_wn2vl")
+
+[node name="IdleTimer" type="Timer" parent="Beetle"]
+wait_time = 3.0
+autostart = true
+
+[node name="NewTargetTimer" type="Timer" parent="Beetle"]
+wait_time = 0.5
+autostart = true
 
 [node name="BeetleLabel" type="Label" parent="."]
 offset_left = 672.0
@@ -133,3 +142,6 @@ offset_top = 328.0
 offset_right = 712.0
 offset_bottom = 351.0
 script = ExtResource("3_4xaty")
+
+[connection signal="timeout" from="Beetle/IdleTimer" to="Beetle" method="_on_idle_timer_timeout"]
+[connection signal="timeout" from="Beetle/NewTargetTimer" to="Beetle" method="_on_new_target_timer_timeout"]
