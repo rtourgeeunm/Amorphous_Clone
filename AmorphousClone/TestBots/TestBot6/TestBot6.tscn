@@ -123,6 +123,7 @@ position = Vector2(576, 320)
 script = ExtResource("1_ivhqp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="TestBot"]
+rotation = 1.5708
 sprite_frames = SubResource("SpriteFrames_4tx5b")
 autoplay = "default"
 script = ExtResource("3_cdy0h")
